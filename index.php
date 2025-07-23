@@ -1,16 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+</head>
+<body>
+
+
 <?php
-// Tanda 'echo' digunakan untuk menampilkan teks ke layar.
-echo "<h1>Selamat Datang di Proyek PHP Saya!</h1>";
 
-// Tanda '$' digunakan untuk membuat variabel.
-$nama = "Rafli";
-$lokasi = "Pontianak";
+$nama = "Rafli Pratama";
+$umur = 19;
 
-// Tanda '.' digunakan untuk menggabungkan string (teks).
-echo "<p>Halo, nama saya " . $nama . ".</p>";
-echo "<p>Saat ini saya sedang belajar PHP di " . $lokasi . ".</p>";
+$kalimat = <<<TEXT
+Halo perkenalkan nama ku adalah $nama.
+Umurku adalah $umur tahun.
+TEXT;
 
-// Menampilkan tanggal dan waktu saat ini.
-echo "<hr>";
-echo "Waktu server saat ini: " . date("d M Y, H:i:s");
+echo nl2br($kalimat);
+
 ?>
+
+</body>
+</html>
